@@ -1,2 +1,157 @@
-body
+body,html
+    font-family: 'Montserrat', sans-serif
+    background: #f9f9f9
+    height 100vh
+
+.list__header
+    display: flex
+    justify-content: space-between
+
+    @media(max-width: 991px)
+        flex-wrap: wrap
+
+//https://www.flaticon.com/packs/shopping-119 icons pack
+
+button.uk-button.uk-button-default
     background: #fff
+    box-shadow: 0px 0px 10px #eae7e7 
+    border-radius: 5px
+    color: #23b197
+    font-weight: 700
+    border: none
+    text-transform: none
+    font-size: 15px
+    line-height: 20px
+    text-align: left
+    height 60px 
+    display: flex
+    align-items: center
+
+    @media(max-width: 991px)
+        width 100%
+        margin-bottom 10px
+
+    svg
+        width 40px
+        fill: #23b197
+        margin-right 10px
+
+    span
+        color: #23b197
+        font-weight: 700
+        border: none
+        text-transform: none
+        font-size: 15px
+        line-height: 17px
+        text-align: left 
+
+    strong
+        display: block
+        font-size: 12px
+        font-weight: 400
+        color: #23b197
+
+button.uk-button.uk-button-default.uk-active
+    background: #23b197
+    color: #fff
+
+    span, strong
+        color: #fff
+
+    svg
+        fill: #fff
+
+
+.uk-tab-left::before
+    display: none
+
+.uk-grid.uk-grid-stack
+    max-width 1300px
+    margin: 0 auto
+
+    .content__text
+        border: 1px solid #c7c5c5
+        margin: 0 20px
+        padding: 15px
+        border-radius: 5px
+
+    ul.uk-switcher.uk-margin
+        background: #fff
+        box-shadow: 0px 0px 10px #eae7e7
+        padding: 15px
+        border-radius: 5px
+
+    .uk-tab
+        li
+            background: #f9f9f9
+            min-width: 200px
+            margin-bottom 10px
+            border-radius: 5px
+
+            @media(max-width: 991px)
+                width 94%
+                min-width 94%
+                margin: 10px 0
+
+
+            a
+                text-transform: none
+                color: #23b197
+                border: none
+                font-weight: 700
+                font-size: 13px
+                text-align: center
+                height 40px
+                display: flex
+                align-items: center
+                justify-content: center
+
+        li.uk-active
+            background: #23b197
+
+            a
+                color: #fff
+
+.topo__settings
+    background: #fff
+    padding: 15px 0
+
+    svg
+        width 130px
+        fill: #000
+
+    .topo__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width 1200px
+        margin: 0 auto
+        padding-left 40px
+
+        &-links
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width 45%
+
+            a
+                color: #666666
+                font-size: 15px
+
+                &:hover
+                    color: #23b197
+                    text-decoration: none
+
+            svg
+                width 30px
+                margin-right 5px
+
+            a, span
+                display: flex
+                align-items: center
+
+            span
+                font-size: 15px
+
+                strong
+                    margin-right 5px
